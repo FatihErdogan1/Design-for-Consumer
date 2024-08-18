@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".honeyStoryPage">
+
+    <Button
+        android:id="@+id/surveybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take The Survey"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <TextView
+        android:id="@+id/guestModeText"
+        android:layout_width="378dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="Here is the journey of the honey... If you want to see some test results, please click test rsults link: "
+        android:textAlignment="center"
+        android:textColor="#6E5311"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:background="#D3BA77"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/mainMenu"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/surveyPageButton"
+            android:layout_width="89dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/surveyicon" />
+
+        <ImageView
+            android:id="@+id/logOutButton"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/logout" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="414dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="50dp"
+        android:alpha="1"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/guestModeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/userNameText"
+        android:layout_width="224dp"
+        android:layout_height="29dp"
+        android:text=" journey details"
+        android:textAlignment="center"
+        android:textColor="#6E5311"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guestModeText"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="344dp"
+        android:layout_height="221dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/story" />
+
+    <Button
+        android:id="@+id/downloadDocumentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Applied Test Results as PDF"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <include
+        android:id="@+id/toolbar_layout_top"
+        layout="@layout/toolbar_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

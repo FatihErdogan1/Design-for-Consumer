@@ -9,14 +9,14 @@
     tools:context=".loginPage">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="490dp"
+        android:layout_width="411dp"
+        android:layout_height="509dp"
         android:orientation="vertical"
         android:padding="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/appImage">
 
 
         <TextView
@@ -78,42 +78,46 @@
             />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/forgotPasswordText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autoLink="none"
-            android:clickable="false"
+            android:layout_margin="5dp"
             android:onClick="ToForgotPasswordPage"
             android:text="ForgotPassword?"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/signUpNowText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="ToSignUpPage"
             android:text="Don't have an account? Sign Up Now"
             android:textAlignment="viewStart"
-            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/guestModeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+          android:onClick="guestMode"
+            android:layout_margin="5dp"
             android:text="Guest Mode"
             android:textAlignment="viewStart"
             android:textColor="#00BCD4"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
 
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/appImage"
         android:layout_width="match_parent"
         android:layout_height="221dp"
         app:layout_constraintEnd_toEndOf="parent"
