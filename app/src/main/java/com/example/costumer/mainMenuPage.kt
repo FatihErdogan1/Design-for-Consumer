@@ -26,8 +26,8 @@ class mainMenuPage : AppCompatActivity() {
             insets
         }
             binding.scannerButton.setOnClickListener() {
-
-
+                val intent = Intent(this, honeyStoryPage::class.java)
+                startActivity(intent)
             }
             binding.mainMenu.setOnClickListener() {
                 val intent = Intent(this, mainMenuPage::class.java)
@@ -53,12 +53,6 @@ class mainMenuPage : AppCompatActivity() {
                             startActivity(intent)
                             true
                         }
-                        R.id.storyPageButton -> {
-                            val intent = Intent(this, honeyStoryPage::class.java)
-                            startActivity(intent)
-                            true
-                        }
-
                         R.id.logOutButton -> {
                             val intent = Intent(this, loginPage::class.java)
                             startActivity(intent)
