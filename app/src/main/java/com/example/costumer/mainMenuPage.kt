@@ -29,18 +29,7 @@ class mainMenuPage : AppCompatActivity() {
                 val intent = Intent(this, honeyStoryPage::class.java)
                 startActivity(intent)
             }
-            binding.mainMenu.setOnClickListener() {
-                val intent = Intent(this, mainMenuPage::class.java)
-                startActivity(intent)
-            }
-            binding.surveyPageButton.setOnClickListener() {
-                //val intent = Intent(this, surveyPage::class.java)
-                //startActivity(intent)
-            }
-            binding.logOutButton.setOnClickListener() {
-                val intent = Intent(this, loginPage::class.java)
-                startActivity(intent)
-            }
+
             binding.toolbarLayoutTop.imageViewMenu.setOnClickListener {
                 val popup = PopupMenu(this, binding.toolbarLayoutTop.imageViewMenu)
                 val inflater: MenuInflater = popup.menuInflater
