@@ -40,7 +40,7 @@ class loginPage : AppCompatActivity() {
             startActivity(intent)
 
         }
-        binding.guestModeText.setOnClickListener {
+        binding.guestModeButton.setOnClickListener {
             val intent= Intent(this, mainMenuPage::class.java)
             startActivity(intent)
 
